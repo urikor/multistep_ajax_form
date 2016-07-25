@@ -1,16 +1,22 @@
 
 -- SUMMARY --
 
-Drupal Slack module creates block "Slack messages" witch can be populated to any region on pages.
+Multistep Form Module creates pages for the form and form settings page by links:
+admin/test_form
+admin/test_form_settings
 
 -- REQUIREMENTS --
 
-None.
+Feature, Config Pages.
 
 -- INSTALLATION --
 
 * Install as usual, see http://drupal.org/node/895232 for further information.
 
+* Go to admin/test_form_settings page for making settings.
+
+* Go to admin/test_form page with form.
+
 -- CONFIGURATION --
 
-* Customize the Drupal Slack settings in Administration » Configuration » User interface » Drupal Slack settings.
+* Customize the Multistep Form settings in Administration » Test Form Settings.
