@@ -1,0 +1,28 @@
+<?php
+/**
+ * @file
+ */
+
+/**
+ * Implements hook_install();
+ */
+function multi_form_install() {
+  $modules_array = array();
+  $modules = array('features', 'config_pages', 'config_page_settings_feature');
+  foreach ($modules as $module) {
+    if (!module_exists($module)) {
+      $modules_array[] = $module;
+    }
+  }
+
+  if (!empty($modules_array)) {
+    module_enable($modules_array);
+  }
+}
+
+/**
+ * Implements hook_uninstall();
+ */
+function multi_form_uninstall() {
+
+}

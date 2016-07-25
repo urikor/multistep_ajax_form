@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Config page settings feature feature.
+ */
+
+include_once 'config_page_settings_feature.features.inc';

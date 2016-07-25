@@ -1,0 +1,27 @@
+<?php
+/**
+ * @file
+ * Test Multi-step Form module.
+ */
+
+module_load_include('inc', 'multi_form', 'includes/msf_functions');
+module_load_include('inc', 'multi_form', 'includes/msf_multi_form');
+
+/**
+ * Implements hook_menu().
+ * @return array
+ */
+function multi_form_menu() {
+  $items = array();
+
+  $items['admin/test_form'] = array(
+    'title' => 'Test Form',
+    'description' => 'Test Multi-step Form page',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('msf_multi_form'),
+    'access arguments' => array('administer test_multi_form'),
+    'type' => MENU_NORMAL_ITEM,
+  );
+
+  return $items;
+}

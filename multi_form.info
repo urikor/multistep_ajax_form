@@ -1,0 +1,9 @@
+name = Test Multi-step Form
+description = Test Multi-step Form module
+package = TEST
+version = 7.x-1.0
+core = 7.x
+dependencies[] = config_pages
+dependencies[] = features
+files[] = multi_form.module
+
