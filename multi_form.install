@@ -4,7 +4,7 @@
  */
 
 /**
- * Implements hook_install();
+ * Implements hook_install().
  */
 function multi_form_install() {
   $modules_array = array();
@@ -21,7 +21,7 @@ function multi_form_install() {
 }
 
 /**
- * Implements hook_uninstall();
+ * Implements hook_uninstall().
  */
 function multi_form_uninstall() {
 
