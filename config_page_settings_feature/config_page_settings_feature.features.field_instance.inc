@@ -100,6 +100,40 @@ function config_page_settings_feature_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'config_pages-settings_form-field_mail_subject'.
+  $field_instances['config_pages-settings_form-field_mail_subject'] = array(
+    'bundle' => 'settings_form',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 4,
+      ),
+    ),
+    'entity_type' => 'config_pages',
+    'field_name' => 'field_mail_subject',
+    'label' => 'Mail subject',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 5,
+    ),
+  );
+
   // Exported field_instance: 'config_pages-settings_form-field_mail_to'.
   $field_instances['config_pages-settings_form-field_mail_to'] = array(
     'bundle' => 'settings_form',
@@ -138,6 +172,7 @@ function config_page_settings_feature_field_default_field_instances() {
   // Included for use with string extractors like potx.
   t('Fields number for the first step');
   t('Fields number for the second step');
+  t('Mail subject');
   t('Mail to');
 
   return $field_instances;

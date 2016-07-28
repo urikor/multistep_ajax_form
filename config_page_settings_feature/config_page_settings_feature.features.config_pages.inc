@@ -28,6 +28,7 @@ function config_page_settings_feature_config_pages_default_data() {
         ),
       ),
     ),
+    'field_mail_subject' => array(),
     'field_mail_to' => array(
       'und' => array(
         0 => array(
