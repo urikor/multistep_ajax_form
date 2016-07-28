@@ -18,16 +18,16 @@ function msf_multi_form($form, &$form_state) {
   $step = empty($form_state['storage']['step']) ? 1 : $form_state['storage']['step'];
   $form_state['storage']['step'] = $step;
 
-  $fields_num = config_pages_get('settings_form', "field_fields_number_$step");
+  $fields_num = config_pages_get('settings_form', 'field_fields_number_' . $step);
 
   if (!empty($fields_num) && $fields_num > 0) {
-    $form["step$step"] = array(
+    $form['step' . $step] = array(
       '#type' => 'fieldset',
       '#title' => t("Page %page of Multistep Form", array("%page" => $step)),
     );
 
     for ($i = 0; $i < $fields_num; $i++) {
-      $form["step$step"]["msf_$step" . "$i"] = msf_form_fields($form_state, $step, $i);
+      $form['step' . $step]['msf_' . $step . '$i'] = msf_form_fields($form_state, $step, $i);
     }
 
     $form['actions'] = array('#type' => 'actions');
